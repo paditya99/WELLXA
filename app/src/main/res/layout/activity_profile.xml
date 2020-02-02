@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".profileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@drawable/gradientprofile"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical">
+
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="150dp"
+            android:id="@+id/photo"
+            android:layout_height="150dp"
+            android:layout_marginTop="45dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/profile"
+            app:civ_border_color="#58C4F3"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_color="#A9D8F0"/>
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="-60dp"
+            app:srcCompat="@drawable/camera" />
+
+        <TextView
+            android:id="@+id/profilename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+
+            android:textColor="#fff"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+
+        android:layout_width="275dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/iconview"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="60dp"
+
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="12dp"
+        android:background="#D9E4E9"
+
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:paddingLeft="35dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/gmail" />
+
+            <TextView
+                android:id="@+id/emailid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            android:paddingLeft="35dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="+91-9999988888"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            android:paddingLeft="35dp">
+
+            <Button
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="40dp"
+                android:background="#8E24AA"
+                android:text="Logout"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

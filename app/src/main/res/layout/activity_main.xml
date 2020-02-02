@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slidescreen"
+
+    android:clipToPadding="false"
+    tools:context=".MainActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/dotsPageViewer"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="510dp"
+        android:gravity="clip_horizontal|center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginRight="310dp"
+        android:layout_weight="1"
+        android:background="#0CCCCCCC"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="#0CCCCCCC"
+        android:text="Next"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

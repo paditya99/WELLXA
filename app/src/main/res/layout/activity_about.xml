@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1CFF1"
+    tools:context=".about">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#538F12"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:text="About"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:outlineAmbientShadowColor="@color/colorSplashsceen"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="33dp"
+            android:text="WELLXA"
+            android:textColor="#470B0B"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/salsa" />
+
+
+        <TextView
+            android:id="@+id/textView8"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/about"
+            android:textColor="#400A4E" />
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

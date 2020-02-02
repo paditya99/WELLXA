@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B13511"
+    tools:context=".launcherActivity">
+
+    <ImageView
+        android:id="@+id/iconview"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="250dp"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/icontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="262dp"
+        android:layout_toRightOf="@+id/iconview"
+        android:includeFontPadding="true"
+        android:text="Well Xa"
+        android:textColor="#4CDB3D"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/aladin" />
+
+    <TextView
+        android:id="@+id/icontext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="302dp"
+        android:layout_toRightOf="@+id/iconview"
+        android:includeFontPadding="false"
+        android:text="Smart Health"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</RelativeLayout>

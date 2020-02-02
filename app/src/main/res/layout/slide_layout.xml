@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="Calculate your BMI and get suggestions"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/slide_image"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/heading"
+        android:layout_marginLeft="250px"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/bmiscreen" />
+</RelativeLayout>

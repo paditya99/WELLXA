@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7F8"
+    tools:context=".loginActivity">
+
+    <ImageView
+        android:id="@+id/iconview"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginLeft="-130dp"
+        android:layout_marginTop="-390dp"
+        android:layout_marginRight="-30dp"
+        android:background="#00000000"
+        android:rotation="15"
+        android:scaleType="center"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/sadimg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/cardview2"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="-50dp"
+        android:rotation="130"
+        app:srcCompat="@drawable/circle"
+        tools:layout_marginRight="-90dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/iconview"
+        android:layout_marginLeft="-200dp"
+        android:layout_marginTop="210dp"
+        android:background="#00000000"
+        android:rotation="45"
+        app:srcCompat="@drawable/circle2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/iconview"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="-120dp"
+        android:rotation="100"
+        app:srcCompat="@drawable/circle2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Login Form"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_width="275dp"
+        android:layout_height="280dp"
+        android:layout_below="@+id/iconview"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="12dp"
+        android:background="#D9E4E9"
+
+        app:cardCornerRadius="15dp"
+        app:cardElevation="1dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="20dp"
+            android:text="Email ID"
+            android:textColor="#8E24AA"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="100dp"
+            android:text="Password"
+            android:textColor="#8E24AA"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="120dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="40dp"
+            android:background="#865ED8"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview2"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:text="No account yet?"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/link_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview2"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/textView6"
+        android:text="Create one"
+        android:textColor="#039BE5"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
